@@ -75,7 +75,7 @@ article img {
   padding: 20px;
   margin-left: -15px;
   font-size: 18px;
-  width: 50%;
+  width: 100%;
   line-height: 1.5;
   color: #ffffff;
 }
@@ -105,4 +105,29 @@ article img {
 
 #contact ul li {
   margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 576px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .portfolio-section {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #about-me p {
+      width: 100%;
+    }
+
+    .heading {
+      text-align: center;
+    }
+
+    h1 {
+      margin-left: 60px;
+    }
 }
