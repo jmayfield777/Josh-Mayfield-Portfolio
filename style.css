@@ -94,6 +94,8 @@ article img {
 #stock-images img:hover {
   cursor: pointer;
   border: 5px solid var(--header-border-color);
+  height: 350px;
+  width: 350px;
 }
 
 #contact ul {
