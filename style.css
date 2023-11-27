@@ -51,18 +51,11 @@ article img {
 
 .heading {
   color: rgb(231, 231, 210);
+  margin: 10px;
 }
 
 #about-me {
-  border: solid black;
-}
-
-#work {
-  border: solid black;
-}
-
-#contact {
-  border: solid black;
+  border-bottom: 5px solid black;
 }
 
 #about-me p {
@@ -74,8 +67,8 @@ article img {
   color: #ffffff;
 }
 
-.heading {
-  margin: 10px;
+#work {
+  border-bottom: 5px solid black;
 }
 
 #stock-images {
@@ -87,6 +80,10 @@ article img {
 
 #stock-images img {
   margin: 10px;
+}
+
+#contact {
+  border-bottom: 5px solid black;
 }
 
 #contact ul {
