@@ -1,3 +1,7 @@
+:root {
+  --header-border-color: rgb(231, 231, 210);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +21,7 @@ body {
 
 .header h1 {
   display: inline-block;
-  color: rgb(231, 231, 210);
+  color: var(--header-border-color);
 }
 
 .header nav {
@@ -42,6 +46,15 @@ a {
   text-decoration: none;
 }
 
+li > a:hover {
+  cursor: pointer;
+  border-bottom: 5px solid var(--header-border-color);
+}
+
+a:active {
+  color: var(--header-border-color);
+}
+
 article img {
   height: 500px;
   width: 100%;
@@ -50,12 +63,12 @@ article img {
 }
 
 .heading {
-  color: rgb(231, 231, 210);
-  margin: 10px;
+  color: var(--header-border-color);
+  margin: 8px;
 }
 
-#about-me {
-  border-bottom: 5px solid black;
+.portfolio-section {
+  border-bottom: 5px solid var(--header-border-color);
 }
 
 #about-me p {
@@ -67,10 +80,6 @@ article img {
   color: #ffffff;
 }
 
-#work {
-  border-bottom: 5px solid black;
-}
-
 #stock-images {
   display: flex;
   flex-wrap: wrap;
@@ -79,11 +88,12 @@ article img {
 }
 
 #stock-images img {
-  margin: 10px;
+  margin: 15px;
 }
 
-#contact {
-  border-bottom: 5px solid black;
+#stock-images img:hover {
+  cursor: pointer;
+  border: 5px solid var(--header-border-color);
 }
 
 #contact ul {
