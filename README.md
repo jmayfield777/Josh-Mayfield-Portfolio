@@ -10,8 +10,6 @@ Screenshot 2 (middle of page) - <a href="./Screenshot2.png"></a>
 
 Screenshot 3 (bottom of page) - <a href="./Screenshot3.png"></a>
 
-Deployed URL - 
-
 ## Installation
 
 N/A
