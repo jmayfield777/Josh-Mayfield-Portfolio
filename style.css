@@ -1,60 +1,88 @@
+/* set variables to use throughout stylesheet */
 :root {
   --header-border-color: rgb(231, 231, 210);
+  --background-color: rgb(138, 194, 247);
+  --text-color: #ffffff;
 }
 
+/* resets box model */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* sets background color of body element */
 body {
-  background-color: rgb(138, 194, 247);
+  background-color: var(--background-color);
 }
 
+/* sets padding, font, background color and text color */
 .header {
   padding: 20px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: rgb(138, 194, 247);
-  color: #ffffff;
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
+/* sets size of avatar, position, and makes it a circle */
+#avatar {
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  float: left;
+  margin-right: 20px;
+  position: relative;
+  bottom: 10px;
+}
+
+/* positions and sets the color of the h1 text */
 .header h1 {
   display: inline-block;
   color: var(--header-border-color);
+  position: relative;
+  top: 6px;
 }
 
+/* positions navbar list elements */
 .header nav {
   padding-top: 15px;
   margin-right: 20px;
   float: right;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;
 }
 
+/* removes bullet points from navbar list elements */
 .header nav ul {
   list-style-type: none;
 }
 
+/* positions list elements in navbar */
 .header nav ul li {
   display: inline-block;
   margin: 0 20px;
 }
 
+/* removes default styling from links and changes color */
 a {
-  color: #ffffff;
+  color: var(--text-color);
   text-decoration: none;
 }
 
+/* selects a elements that are direct children of li and
+the cursor to border and gives it a bottom border */
 li > a:hover {
   cursor: pointer;
   border-bottom: 5px solid var(--header-border-color);
 }
 
+/* changes the color of a link when clickec */
 a:active {
   color: var(--header-border-color);
 }
 
+/* sets size of background image */
 article img {
   height: 500px;
   width: 100%;
@@ -62,24 +90,32 @@ article img {
   object-fit: cover;
 }
 
+/* changes color of all heading text and gives it some space */
 .heading {
   color: var(--header-border-color);
   margin: 8px;
 }
 
+/* sets a bottom border for each of the portfolio sections */
 .portfolio-section {
   border-bottom: 5px solid var(--header-border-color);
 }
 
+/* styles the typography of paragraph elements
+in the about me section */
 #about-me p {
   padding: 20px;
   margin-left: -15px;
+  font-family: Verdana, Tahoma, Arial, sans-serif;
   font-size: 18px;
   width: 100%;
   line-height: 1.5;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
+/* sets size of placeholder images,
+turns it into flexbox container, wraps
+on smaller screens */
 #stock-images {
   display: flex;
   flex-wrap: wrap;
@@ -87,10 +123,13 @@ article img {
   margin: 10px;
 }
 
+/* gives placeholder images some space */
 #stock-images img {
   margin: 15px;
 }
 
+/* sets cursor to pointer, sets a border around
+img elements, and increases size when hovering */
 #stock-images img:hover {
   cursor: pointer;
   border: 5px solid var(--header-border-color);
@@ -98,6 +137,7 @@ article img {
   width: 350px;
 }
 
+/* makes contact elements and flex container */
 #contact ul {
   display: flex;
   justify-content: space-between;
@@ -105,11 +145,12 @@ article img {
   margin: 0 10px;
 }
 
+/* gives contact list elements some space */
 #contact ul li {
   margin-bottom: 10px;
 }
 
-
+/* sets page for smaller screen */
 @media screen and (max-width: 576px) {
     .container {
       display: flex;
